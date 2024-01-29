@@ -1,0 +1,10 @@
+apiVersion: hazelcast.com/v1alpha1
+kind: Hazelcast
+metadata:
+  name: my-hazelcast
+spec:
+  clusterSize: 2
+  exposeExternally:
+    type: Smart
+    discoveryServiceType: LoadBalancer
+    memberAccess: NodePortExternalIP
